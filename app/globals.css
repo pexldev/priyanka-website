@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cosmetique Dental Color Palette */
+  --color-primary-black: #1a1a1a;
+  --color-accent-gold: #b0916e;
+  --color-action-black: #000000;
+  --color-bg-light: #ffffff;
+  --color-bg-off-white: #f9f9f9;
+  --color-text-muted: #707070;
+  --color-chat-icon: #c5a572;
+
+  /* Extended palette for utility classes */
+  --color-gold-50: #f9f7f4;
+  --color-gold-100: #f0ebe3;
+  --color-gold-200: #e1d7c7;
+  --color-gold-300: #d2c3ab;
+  --color-gold-400: #c1aa8a;
+  --color-gold-500: #b0916e;
+  --color-gold-600: #997c5d;
+  --color-gold-700: #7d654b;
+  --color-gold-800: #5f4d39;
+  --color-gold-900: #3f3326;
+
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-bg-light text-primary-black antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-block text-center;
+  }
+
+  .btn-primary {
+    @apply bg-action-black text-white hover:bg-primary-black hover:shadow-lg;
+  }
+
+  .btn-gold {
+    @apply bg-accent-gold text-white hover:bg-gold-600 hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-accent-gold text-accent-gold hover:bg-accent-gold hover:text-white;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition-all;
+  }
+
+  .textarea-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition-all resize-y;
+  }
+
+  .select-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-gold focus:border-transparent outline-none transition-all bg-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-gold {
+    @apply bg-gradient-to-r from-gold-600 to-accent-gold;
+  }
+
+  .gradient-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent;
+  }
+
+  .gradient-overlay-light {
+    @apply absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent;
+  }
+}
