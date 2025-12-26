@@ -3,10 +3,17 @@
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { getServiceBySlug } from '@/data/services';
+import { getServiceBySlug, getAllServiceSlugs } from '@/data/services';
 import { getGalleryImagesByService } from '@/data/gallery';
 import { getTestimonialsByService } from '@/data/testimonials';
 import BeforeAfterGallery from '@/components/BeforeAfterGallery';
+
+export function generateStaticParams() {
+  const slugs = getAllServiceSlugs();
+  return slugs.map((slug) => ({
+    slug: slug,
+  }));
+}
 
 export default function ServiceDetailPage() {
   const params = useParams();
