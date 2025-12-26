@@ -39,7 +39,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2" onClick={closeMenu}>
             <div className="text-2xl font-bold text-white">
-              Cosmetique <span className="text-accent-gold">Dental</span>
+              Priyanka <span className="text-accent-gold">Prosthodontics</span>
             </div>
           </Link>
 
