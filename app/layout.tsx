@@ -8,12 +8,12 @@ import VerticalConsultButton from '@/components/VerticalConsultButton';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Cosmetique Dental - Luxury Smile Design & Prosthodontics',
+  title: 'Priyanka Prosthodontics - Luxury Smile Design & Prosthodontics',
   description: '100,000+ smiles designed. Luxury dental services that are truly accessible. Expert prosthodontics including implants, veneers, dentures, and full mouth rehabilitation.',
   keywords: ['dental implants', 'veneers', 'dentures', 'smile design', 'prosthodontics', 'full mouth rehabilitation', 'luxury dental', 'cosmetic dentistry'],
-  authors: [{ name: 'Cosmetique Dental' }],
+  authors: [{ name: 'Priyanka Prosthodontics' }],
   openGraph: {
-    title: 'Cosmetique Dental - Luxury Smile Design & Prosthodontics',
+    title: 'Priyanka Prosthodontics - Luxury Smile Design & Prosthodontics',
     description: '100,000+ smiles designed. Luxury dental services that are truly accessible.',
     type: 'website',
     locale: 'en_US',
