@@ -48,7 +48,7 @@ export default function Hero() {
             >
               <div className="inline-block">
                 <span className="text-sm uppercase tracking-wider text-gray-300">
-                  Welcome to Cosmetique Dental
+                  Welcome to Priyanka Prosthodontics
                 </span>
               </div>
 
