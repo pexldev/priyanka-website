@@ -1,7 +1,7 @@
 'use client';
 
 import ServiceCard from '@/components/ServiceCard';
-import { services } from '@/data/services'
+import { services } from '@/data/services';
 
 export default function ServicesPage() {
   return (
